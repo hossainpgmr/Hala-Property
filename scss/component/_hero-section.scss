@@ -1,0 +1,79 @@
+.hero-section {
+  @include flex-center;
+  width: 100vw;
+  height: 850px;
+  margin: 0 auto;
+  color: $white;
+  text-align: center;
+  background-image: url(/assets/hero-bg.png);
+  background-size: cover;
+  background-position: center;
+  .headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .hero-heading {
+      color: $white;
+      font-family: $font-merryweather;
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 82px;
+    }
+    .hero-para {
+      width: 750px;
+      color: $white;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 36px;
+    }
+  }
+  .search-bar {
+    width: 750px;
+    margin: 0 auto;
+    margin-top: 16px;
+    .search-group {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      color: black;
+      background: $white;
+      padding: 20px;
+      border-radius: 32px;
+      .search-item {
+        @include flex-center;
+        gap: 8px;
+        text-align: left;
+        .title {
+          margin: 0;
+          padding: 0;
+          color: $gray-bold-color;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 24px;
+        }
+        .subtitle {
+          margin: 0;
+          padding: 0;
+          color: $gray-color;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+        }
+      }
+      .search-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 68px;
+        height: 68px;
+        background-color: $primary-color;
+        border-radius: 50%;
+
+        .fa-solid {
+          color: #fff;
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
