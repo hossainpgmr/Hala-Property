@@ -1,2 +1,22 @@
+// google font import
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+// partial file import
+@import "component/feature/mixin";
+@import "component/feature/variables";
+@import "component/navbar";
+
+// universal selector
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto !important;
+  max-width: 1280px !important;
+}
+
 // bootstrap sass node modules
 @import "../node_modules/bootstrap/scss/bootstrap";
